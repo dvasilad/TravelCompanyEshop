@@ -1,5 +1,5 @@
 package com.travelcompany.eshop.enumeration;
 
-public enum Category {
+public enum CustomerCategory {
     INDIVIDUAL, BUSINESS
 }

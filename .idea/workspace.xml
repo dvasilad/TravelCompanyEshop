@@ -2,15 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00a90a83-5f04-473b-b34c-8afcc3369f90" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/domain/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/domain/PaymentCash.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/domain/PaymentCreditCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/exception/CustomerException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/exception/TicketException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/service/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/service/TicketService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/domain/PaymentMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/exceptions/CustomerEmailException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/exceptions/CustomerNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/exceptions/InvalidAirportCodeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/exceptions/ItineraryNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/exceptions/TravelCompanyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/reporting/ReportService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/TravelCompanyEshop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/TravelCompanyEshop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/domain/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/domain/Itinerary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/domain/Itinerary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/domain/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/domain/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/enumeration/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/enumeration/CustomerCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/exception/CustomerException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/exception/TicketException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/service/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/service/TicketService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +62,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="TravelCompanyEshop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="com.travelcompany.eshop.TravelCompanyEshop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.travelcompany.eshop.TravelCompanyEshop" />
       <module name="TravelCompanyEshop" />
       <extension name="coverage">
@@ -69,7 +77,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TravelCompanyEshop" />
+        <item itemvalue="Application.com.travelcompany.eshop.TravelCompanyEshop" />
       </list>
     </recent_temporary>
   </component>
@@ -96,12 +104,20 @@
       <option name="project" value="LOCAL" />
       <updated>1729443236185</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="payment inheritance">
+      <created>1729538322587</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729538322587</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first" />
     <MESSAGE value="domain enumeration packages updating" />
-    <option name="LAST_COMMIT_MESSAGE" value="domain enumeration packages updating" />
+    <MESSAGE value="payment inheritance" />
+    <option name="LAST_COMMIT_MESSAGE" value="payment inheritance" />
   </component>
 </project>
