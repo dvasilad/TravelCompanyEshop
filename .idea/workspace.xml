@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00a90a83-5f04-473b-b34c-8afcc3369f90" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/TravelCompanyEshop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/domain/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/domain/Itinerary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/domain/Ticket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/enumeration/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/enumeration/Nationality.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/domain/Payment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/domain/PaymentCash.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/domain/PaymentCreditCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/exception/CustomerException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/exception/TicketException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/service/TicketService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/TravelCompanyEshop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/TravelCompanyEshop.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,13 +41,37 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/tvasilad/IdeaProjects/OteShop-2024"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.travelcompany.eshop.domain" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\tvasilad\IdeaProjects\TravelCompanyEshop\src" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="TravelCompanyEshop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.travelcompany.eshop.TravelCompanyEshop" />
+      <module name="TravelCompanyEshop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.travelcompany.eshop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TravelCompanyEshop" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -65,11 +89,19 @@
       <option name="project" value="LOCAL" />
       <updated>1729166550302</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="domain enumeration packages updating">
+      <created>1729443236185</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729443236185</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first" />
-    <option name="LAST_COMMIT_MESSAGE" value="first" />
+    <MESSAGE value="domain enumeration packages updating" />
+    <option name="LAST_COMMIT_MESSAGE" value="domain enumeration packages updating" />
   </component>
 </project>
