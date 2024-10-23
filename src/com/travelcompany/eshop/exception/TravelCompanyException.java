@@ -1,4 +1,4 @@
-package com.travelcompany.eshop.exceptions;
+package com.travelcompany.eshop.exception;
 
 public class TravelCompanyException extends Exception {
     public TravelCompanyException(String message) {

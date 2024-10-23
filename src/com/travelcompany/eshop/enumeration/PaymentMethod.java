@@ -1,4 +1,4 @@
-package com.travelcompany.eshop.domain;
+package com.travelcompany.eshop.enumeration;
 
 public enum PaymentMethod {
     CASH,

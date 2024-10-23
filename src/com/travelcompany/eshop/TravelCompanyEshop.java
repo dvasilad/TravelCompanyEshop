@@ -3,8 +3,8 @@ package com.travelcompany.eshop;
 import com.travelcompany.eshop.domain.*;
 import com.travelcompany.eshop.enumeration.CustomerCategory;
 import com.travelcompany.eshop.service.*;
-import com.travelcompany.eshop.exceptions.CustomerEmailException;
-import com.travelcompany.eshop.reporting.ReportService;
+import com.travelcompany.eshop.exception.CustomerEmailException;
+
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -38,16 +38,7 @@ public class TravelCompanyEshop {
         List<Itinerary> itineraries = new ArrayList<>();
         List<Ticket> tickets = new ArrayList<>();
 
-        // data insert
-        // customers.add(...); itineraries.add(...); tickets.add(...);
 
-        ReportService reportService = new ReportService(tickets, customers, itineraries);
-
-        // run reporting
-        reportService.reportTotalTicketsAndCostPerCustomer();
-        reportService.reportItinerariesPerDestinationAndDeparture();
-        reportService.reportCustomersWithMostTicketsAndLargestCost();
-        reportService.reportCustomersWithoutTickets();
 
         //email exception
         for (Customer customer : customers) {

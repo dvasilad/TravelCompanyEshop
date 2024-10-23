@@ -2,23 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00a90a83-5f04-473b-b34c-8afcc3369f90" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/domain/PaymentMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/exceptions/CustomerEmailException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/exceptions/CustomerNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/exceptions/InvalidAirportCodeException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/exceptions/ItineraryNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/exceptions/TravelCompanyException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/reporting/ReportService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/reporting/CustomerTicketReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/reporting/ItineraryReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/reporting/Reportable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/TravelCompanyEshop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/TravelCompanyEshop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/domain/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/domain/Itinerary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/domain/Itinerary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/domain/PaymentMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/enumeration/PaymentMethod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/domain/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/domain/Ticket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/enumeration/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/enumeration/CustomerCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/exception/CustomerException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/exception/TicketException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/service/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/service/TicketService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/exceptions/CustomerEmailException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/exception/CustomerEmailException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/exceptions/CustomerNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/exception/CustomerNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/exceptions/InvalidAirportCodeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/exception/InvalidAirportCodeException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/exceptions/ItineraryNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/exception/ItineraryNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/exceptions/TravelCompanyException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/exception/TravelCompanyException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/reporting/ReportService.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -50,7 +48,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/tvasilad/IdeaProjects/OteShop-2024"
+    "last_opened_file_path": "C:/Users/tvasilad/IdeaProjects/OteCS-day09"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -111,13 +109,32 @@
       <option name="project" value="LOCAL" />
       <updated>1729538322587</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="exception &amp; reporting update">
+      <created>1729544810250</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1729544810250</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first" />
     <MESSAGE value="domain enumeration packages updating" />
     <MESSAGE value="payment inheritance" />
-    <option name="LAST_COMMIT_MESSAGE" value="payment inheritance" />
+    <MESSAGE value="exception &amp; reporting update" />
+    <option name="LAST_COMMIT_MESSAGE" value="exception &amp; reporting update" />
   </component>
 </project>

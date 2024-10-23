@@ -21,7 +21,7 @@ public class Customer {
         this.customerCategory = customerCategory;
     }
 
-    public Customer(int i, String maria_iordanou, String email, String athens, String greek, CustomerCategory individual) {
+    public Customer(int id, String name, String email, String address, String nationality, CustomerCategory individual) {
 
     }
 
