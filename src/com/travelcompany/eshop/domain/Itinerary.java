@@ -1,24 +1,22 @@
 package com.travelcompany.eshop.domain;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Itinerary {
     private int id;
     private String departureAirportCode;
     private String destinationAirportCode;
-    private Date departureDate;
+    private String departureDate;
     private String airline;
     private double basicPrice;
 
-
-    public Itinerary(int id, String departureAirportCode, String destinationAirportCode, Date departureDate, String airline, double basicPrice) {
+    public Itinerary(int id, String departureAirportCode, String destinationAirportCode, String departureDate, String airline, double basicPrice) {
         this.id = id;
         this.departureAirportCode = departureAirportCode;
         this.destinationAirportCode = destinationAirportCode;
         this.departureDate = departureDate;
         this.airline = airline;
         this.basicPrice = basicPrice;
-
     }
 
     public int getId() {
@@ -45,11 +43,11 @@ public class Itinerary {
         this.destinationAirportCode = destinationAirportCode;
     }
 
-    public Date getDepartureDate() {
+    public String getDepartureDate() {
         return departureDate;
     }
 
-    public void setDepartureDate(Date departureDate) {
+    public void setDepartureDate(String departureDate) {
         this.departureDate = departureDate;
     }
 
@@ -67,6 +65,18 @@ public class Itinerary {
 
     public void setBasicPrice(double basicPrice) {
         this.basicPrice = basicPrice;
+    }
+
+    @Override
+    public String toString() {
+        return "Itinerary{" +
+                "id=" + id +
+                ", departureAirportCode='" + departureAirportCode + '\'' +
+                ", destinationAirportCode='" + destinationAirportCode + '\'' +
+                ", departureDate='" + departureDate + '\'' +
+                ", airline='" + airline + '\'' +
+                ", basicPrice=" + basicPrice +
+                '}';
     }
 }
 

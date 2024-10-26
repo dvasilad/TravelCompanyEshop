@@ -8,11 +8,11 @@ import com.travelcompany.eshop.domain.Ticket;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class CustomersWithoutTicketsReport implements Reportable {
+public class CustomersWithoutTicketsReportlmpl implements Reportable {
     private List<Customer> customers;
     private List<Ticket> tickets;
 
-    public CustomersWithoutTicketsReport(List<Customer> customers, List<Ticket> tickets) {
+    public CustomersWithoutTicketsReportlmpl(List<Customer> customers, List<Ticket> tickets) {
         this.customers = customers;
         this.tickets = tickets;
     }

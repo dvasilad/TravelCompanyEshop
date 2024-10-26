@@ -8,10 +8,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class ItineraryReport implements Reportable {
+public class ItineraryReportlmpl implements Reportable {
     private List<Itinerary> itineraries;
 
-    public ItineraryReport(List<Itinerary> itineraries) {
+    public ItineraryReportlmpl(List<Itinerary> itineraries) {
         this.itineraries = itineraries;
     }
 

@@ -7,11 +7,11 @@ import com.travelcompany.eshop.domain.Ticket;
 
 import java.util.List;
 
-public class CustomerTicketReport implements Reportable {
+public class CustomerTicketReportlmpl implements Reportable {
     private List<Customer> customers;
     private List<Ticket> tickets;
 
-    public CustomerTicketReport(List<Customer> customers, List<Ticket> tickets) {
+    public CustomerTicketReportlmpl(List<Customer> customers, List<Ticket> tickets) {
         this.customers = customers;
         this.tickets = tickets;
     }

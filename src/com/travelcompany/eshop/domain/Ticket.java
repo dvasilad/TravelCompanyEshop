@@ -17,6 +17,9 @@ public class Ticket {
         this.paymentAmount = paymentAmount;
     }
 
+    public Ticket(Long id, Customer customer, Itinerary itinerary) {
+    }
+
     public int getId() {
         return id;
     }

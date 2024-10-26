@@ -22,4 +22,3 @@ public class TicketService {
         return payment.calculateFinalAmount();
     }
 }
-

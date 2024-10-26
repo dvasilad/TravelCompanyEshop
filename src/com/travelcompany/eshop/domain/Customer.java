@@ -1,28 +1,23 @@
 package com.travelcompany.eshop.domain;
 
 import com.travelcompany.eshop.enumeration.CustomerCategory;
-import com.travelcompany.eshop.enumeration.Nationality;
+
 
 public class Customer {
     private Long id;
     private String name;
     private String email;
     private String address;
-    private Nationality nationality;
+    private String nationality;
     private CustomerCategory customerCategory;
 
-
-    public Customer(Long id, String name, String email, String address, Nationality nationality, CustomerCategory customerCategory) {
+    public Customer(Long id, String name, String email, String address, String nationality, CustomerCategory customerCategory) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.address = address;
         this.nationality = nationality;
         this.customerCategory = customerCategory;
-    }
-
-    public Customer(int id, String name, String email, String address, String nationality, CustomerCategory individual) {
-
     }
 
     public Long getId() {
@@ -57,19 +52,35 @@ public class Customer {
         this.address = address;
     }
 
-    public Nationality getNationality() {
+    public String getNationality() {
         return nationality;
     }
 
-    public void setNationality(Nationality nationality) {
+    public void setNationality(String nationality) {
         this.nationality = nationality;
     }
 
-    public CustomerCategory getCategory() {
+    public CustomerCategory getCustomerCategory() {
         return customerCategory;
     }
 
-    public void setCategory(CustomerCategory customerCategory) {
+    public void setCustomerCategory(CustomerCategory customerCategory) {
         this.customerCategory = customerCategory;
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", address='" + address + '\'' +
+                ", nationality='" + nationality + '\'' +
+                ", customerCategory=" + customerCategory +
+                '}';
+    }
+
+    public CustomerCategory getCategory() {
+        return null;
     }
 }
