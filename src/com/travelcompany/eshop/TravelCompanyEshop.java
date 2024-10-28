@@ -24,9 +24,9 @@ public class TravelCompanyEshop {
             System.out.println(customer4);
 
 
-            Itinerary itinerary1 = new Itinerary(1, "ATH", "PAR", "10-04-2025", "SkyLines", 300);
+            Itinerary itinerary1 = new Itinerary(1, "ATH","PAR", "10-04-2025", "SkyLines", 300);
             Itinerary itinerary2 = new Itinerary(2, "ATH", "LON", "12-05-2025", "SkyLines", 420);
-            Itinerary itinerary3 = new Itinerary(3, "ATΗ", "AMS", "03-12-2024", "SkyLines", 280);
+            Itinerary itinerary3 = new Itinerary(3, "ATH", "AMS", "03-12-2024", "SkyLines", 280);
             Itinerary itinerary4 = new Itinerary(4, "ATH", "PAR", "07-07-2024", "SkyLines", 310);
 
             System.out.println(itinerary1);
@@ -58,7 +58,7 @@ public class TravelCompanyEshop {
             double finalPriceCreditCard = ticketService.calculatePrice(customer2, itinerary1, paymentCreditCard);
             System.out.println("Final price with credit card: " + finalPriceCreditCard);
 
-            // customers & ticket list
+            // customers / tickets & itineraries  lists
             List<Customer> customers = new ArrayList<>();
             customers.add(customer1);
             customers.add(customer2);
@@ -70,9 +70,27 @@ public class TravelCompanyEshop {
             tickets.add(ticket3);
             tickets.add(ticket4);
 
+            List<Itinerary> itineraries = new ArrayList<>();
+            itineraries.add(itinerary1);
+            itineraries.add(itinerary2);
+            itineraries.add(itinerary3);
+            itineraries.add(itinerary4);
+
             // create and generate reporting for total number and cost of tickets for all customers
-            CustomerTicketReportlmpl report = new CustomerTicketReportlmpl(customers, tickets);
+            CustomerTicketReportlmpl ticketReport = new CustomerTicketReportlmpl(customers, tickets);
+            ticketReport.generateReport();
+
+            // create and generate reporting of the total offered itineraries per destination and per departure
+            ItineraryReportlmpl itineraryReport = new ItineraryReportlmpl(itineraries);
+            itineraryReport.generateReport();
+
+            //create and generate reporting  of the customers who have not purchased any tickets
+            CustomersWithoutTicketsReportlmpl report = new CustomersWithoutTicketsReportlmpl(customers, tickets);
             report.generateReport();
+
+            //create and generate reporting  of the customers with the most tickets and with the largest cost of purchases
+            TopCustomersReportlmpl topCustomers = new TopCustomersReportlmpl(customers, tickets);
+            topCustomers.generateReport();
 
 
             //email exception
@@ -83,7 +101,7 @@ public class TravelCompanyEshop {
             }
 
         } catch (CustomerEmailException e) {
-            System.err.println("Error: " + e.getMessage());
+            System.err.println("\nError: " + e.getMessage());
         }
 
     }

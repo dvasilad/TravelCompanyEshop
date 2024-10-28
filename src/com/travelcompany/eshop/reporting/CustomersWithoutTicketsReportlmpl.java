@@ -19,7 +19,7 @@ public class CustomersWithoutTicketsReportlmpl implements Reportable {
 
     @Override
     public void generateReport() {
-        System.out.println("Customers who have not purchased any tickets:");
+        System.out.println("\nCustomers who have not purchased any tickets:");
 
         List<Customer> customersWithTickets = tickets.stream()
                 .map(Ticket::getCustomer)

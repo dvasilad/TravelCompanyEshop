@@ -21,7 +21,7 @@ public class TopCustomersReportlmpl implements Reportable {
 
     @Override
     public void generateReport() {
-        System.out.println("Customers with the most tickets:");
+        System.out.println("\nCustomers with the most tickets:");
 
         // Group tickets by customer and sort by ticket count
         Map<Customer, Long> customerTicketCount = tickets.stream()

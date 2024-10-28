@@ -17,20 +17,25 @@ public class ItineraryReportlmpl implements Reportable {
 
     @Override
     public void generateReport() {
-        System.out.println("Total offered itineraries per destination:");
+        System.out.println("\nTotal offered itineraries per destination:");
 
-        // Group itineraries by destination
+        // Debug print
+        itineraries.forEach(itinerary ->
+                System.out.println("Debug: Itinerary destination - " + itinerary.getDestinationAirportCode()));
+
+
+        // // Group itineraries by destination and count them
         Map<String, Long> destinationCount = itineraries.stream()
-                .collect(Collectors.groupingBy(Itinerary::getDestinationAirportCode, Collectors.counting()));
+                .collect(Collectors.groupingBy(itinerary -> itinerary.getDestinationAirportCode().trim(), Collectors.counting()));
 
         destinationCount.forEach((destination, count) ->
                 System.out.println("Destination: " + destination + ", Itineraries: " + count));
 
         System.out.println("\nTotal offered itineraries per departure:");
 
-        // Group itineraries by departure
+        // Group itineraries by departure and count them
         Map<String, Long> departureCount = itineraries.stream()
-                .collect(Collectors.groupingBy(Itinerary::getDepartureAirportCode, Collectors.counting()));
+                .collect(Collectors.groupingBy(itinerary -> itinerary.getDepartureAirportCode().trim(), Collectors.counting()));
 
         departureCount.forEach((departure, count) ->
                 System.out.println("Departure: " + departure + ", Itineraries: " + count));
