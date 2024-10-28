@@ -6,7 +6,8 @@ import com.travelcompany.eshop.service.*;
 import com.travelcompany.eshop.exception.*;
 import com.travelcompany.eshop.reporting.*;
 
-
+import java.util.ArrayList;
+import java.util.List;
 public class TravelCompanyEshop {
     public static void main(String[] args) {
         try {
@@ -32,6 +33,16 @@ public class TravelCompanyEshop {
             System.out.println(itinerary3);
             System.out.println(itinerary4);
 
+            Ticket ticket1 = new Ticket(1, customer1, itinerary1, PaymentMethod.CREDIT_CARD, 300.0);
+            Ticket ticket2 = new Ticket(2, customer2, itinerary2, PaymentMethod.CASH, 400.0);
+            Ticket ticket3 = new Ticket(3, customer1, itinerary3, PaymentMethod.CREDIT_CARD, 680.0);
+            Ticket ticket4 = new Ticket(4, customer3, itinerary4, PaymentMethod.CASH, 240.0);
+
+            System.out.println(ticket1);
+            System.out.println(ticket2);
+            System.out.println(ticket3);
+            System.out.println(ticket4);
+
             // create Payment objects
             Payment paymentCash = new PaymentCash(itinerary1.getBasicPrice(), customer1);
             Payment paymentCreditCard = new PaymentCreditCard(itinerary3.getBasicPrice(), customer2);
@@ -46,6 +57,22 @@ public class TravelCompanyEshop {
             double finalPriceCreditCard = ticketService.calculatePrice(customer2, itinerary1, paymentCreditCard);
             System.out.println("Final price with credit card: " + finalPriceCreditCard);
 
+            // customers & ticket list
+            List<Customer> customers = new ArrayList<>();
+            customers.add(customer1);
+            customers.add(customer2);
+            customers.add(customer3);
+
+            List<Ticket> tickets = new ArrayList<>();
+            tickets.add(ticket1);
+            tickets.add(ticket2);
+            tickets.add(ticket3);
+            tickets.add(ticket4);
+
+            // create and generate reporting for total number and cost of tickets for all customers
+            CustomerTicketReportlmpl report = new CustomerTicketReportlmpl(customers, tickets);
+            report.generateReport();
+
 
             //email exception
             for (Customer customer : new Customer[]{customer1, customer2, customer3, customer4}) {
@@ -57,7 +84,9 @@ public class TravelCompanyEshop {
         } catch (CustomerEmailException e) {
             System.err.println("Error: " + e.getMessage());
         }
+
     }
 }
+
 
 

@@ -17,9 +17,6 @@ public class Ticket {
         this.paymentAmount = paymentAmount;
     }
 
-    public Ticket(Long id, Customer customer, Itinerary itinerary) {
-    }
-
     public int getId() {
         return id;
     }
@@ -58,6 +55,17 @@ public class Ticket {
 
     public void setPaymentAmount(double paymentAmount) {
         this.paymentAmount = paymentAmount;
+    }
+
+    @Override
+    public String toString() {
+        return "Ticket{" +
+                "id=" + id +
+                ", customer=" + customer +
+                ", itinerary=" + itinerary +
+                ", paymentMethod=" + paymentMethod +
+                ", paymentAmount=" + paymentAmount +
+                '}';
     }
 }
 

@@ -4,8 +4,7 @@
     <list default="true" id="00a90a83-5f04-473b-b34c-8afcc3369f90" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/TravelCompanyEshop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/TravelCompanyEshop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/exception/CustomerNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/exception/CustomerNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/domain/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/domain/Ticket.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1729962926788</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add mail exception">
+      <created>1730112409334</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1730112409335</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -141,6 +147,7 @@
     <MESSAGE value="exception &amp; reporting update" />
     <MESSAGE value="reporting interface" />
     <MESSAGE value="printing main" />
-    <option name="LAST_COMMIT_MESSAGE" value="printing main" />
+    <MESSAGE value="add mail exception" />
+    <option name="LAST_COMMIT_MESSAGE" value="add mail exception" />
   </component>
 </project>
