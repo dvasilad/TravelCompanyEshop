@@ -18,6 +18,7 @@ public class TravelCompanyEshop {
             Customer customer3 = new Customer(3L, "Dimitris Papadopoulos", "dpapadopoulos@mail.com", "Thessaloniki", "Greek", CustomerCategory.INDIVIDUAL);
             Customer customer4 = new Customer(4L, "Anna Rossi", "anna.rossi@travelcompany.com", "Rome", "Italian", CustomerCategory.BUSINESS);
 
+            System.out.println();
             System.out.println(customer1);
             System.out.println(customer2);
             System.out.println(customer3);
@@ -29,6 +30,7 @@ public class TravelCompanyEshop {
             Itinerary itinerary3 = new Itinerary(3, "ATH", "AMS", "03-12-2024", "SkyLines", 280);
             Itinerary itinerary4 = new Itinerary(4, "ATH", "PAR", "07-07-2024", "SkyLines", 310);
 
+            System.out.println();
             System.out.println(itinerary1);
             System.out.println(itinerary2);
             System.out.println(itinerary3);
@@ -39,6 +41,7 @@ public class TravelCompanyEshop {
             Ticket ticket3 = new Ticket(3, customer1, itinerary3, PaymentMethod.CREDIT_CARD, 680.0);
             Ticket ticket4 = new Ticket(4, customer3, itinerary4, PaymentMethod.CASH, 240.0);
 
+            System.out.println();
             System.out.println(ticket1);
             System.out.println(ticket2);
             System.out.println(ticket3);
@@ -52,11 +55,11 @@ public class TravelCompanyEshop {
             TicketService ticketService = new TicketService();
 
             double finalPriceCash = ticketService.calculatePrice(customer1, itinerary1, paymentCash);
-            System.out.println("Final price with cash: " + finalPriceCash);
+            System.out.println("\nFinal price with cash: " + finalPriceCash);
 
 
             double finalPriceCreditCard = ticketService.calculatePrice(customer2, itinerary1, paymentCreditCard);
-            System.out.println("Final price with credit card: " + finalPriceCreditCard);
+            System.out.println("\nFinal price with credit card: " + finalPriceCreditCard);
 
             // customers / tickets & itineraries  lists
             List<Customer> customers = new ArrayList<>();

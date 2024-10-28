@@ -18,7 +18,7 @@ public class CustomerTicketReportlmpl implements Reportable {
 
     @Override
     public void generateReport() {
-        System.out.println("Total number and cost of tickets for all customers:");
+        System.out.println("\nTotal number and cost of tickets for all customers:");
         for (Customer customer : customers) {
             long ticketCount = tickets.stream()
                     .filter(ticket -> ticket.getCustomer().equals(customer))
