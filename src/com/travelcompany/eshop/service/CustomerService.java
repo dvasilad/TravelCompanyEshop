@@ -10,12 +10,16 @@ import java.util.List;
 public class CustomerService {
     private List<Customer> customers = new ArrayList<>();
 
-    public void addCustomer(Customer customer) {
+    public  void addCustomer(Customer customer) {
         customers.add(customer);
     }
 
     public List<Customer> getAllCustomers() {
         return customers;
+    }
+
+    public Customer findCustomerById(int customerId) {
+        return null;
     }
 }
 
