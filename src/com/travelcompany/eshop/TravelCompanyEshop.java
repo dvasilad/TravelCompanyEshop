@@ -8,12 +8,13 @@ import com.travelcompany.eshop.reporting.*;
 
 import java.util.ArrayList;
 import java.util.List;
+
 public class TravelCompanyEshop {
     public static void main(String[] args) {
         try {
             // data initialization
-            Customer customer1 = new Customer(1L, "Maria Iordanou", "miordanou@travelcompany.com", "Athens", "Greek", CustomerCategory.INDIVIDUAL);
-            Customer customer2 = new Customer(2L, "Ioannis Ioannou", "iioannou@travelcompany.com", "Athens", "Greek", CustomerCategory.BUSINESS);
+            Customer customer1 = new Customer(1L, "Maria Iordanou", "miordanou@mail.com", "Athens", "Greek", CustomerCategory.INDIVIDUAL);
+            Customer customer2 = new Customer(2L, "Ioannis Ioannou", "iioannou@mail.com", "Athens", "Greek", CustomerCategory.BUSINESS);
             Customer customer3 = new Customer(3L, "Dimitris Papadopoulos", "dpapadopoulos@mail.com", "Thessaloniki", "Greek", CustomerCategory.INDIVIDUAL);
             Customer customer4 = new Customer(4L, "Anna Rossi", "anna.rossi@travelcompany.com", "Rome", "Italian", CustomerCategory.BUSINESS);
 
@@ -76,7 +77,7 @@ public class TravelCompanyEshop {
 
             //email exception
             for (Customer customer : new Customer[]{customer1, customer2, customer3, customer4}) {
-                if (!customer.getEmail().endsWith("@travelcompany.com")) {
+                if (customer.getEmail().endsWith("@travelcompany.com")) {
                     throw new CustomerEmailException("Invalid email for customer: " + customer.getEmail());
                 }
             }

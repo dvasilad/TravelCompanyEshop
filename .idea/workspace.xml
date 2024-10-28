@@ -4,7 +4,6 @@
     <list default="true" id="00a90a83-5f04-473b-b34c-8afcc3369f90" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/TravelCompanyEshop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/TravelCompanyEshop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/domain/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/domain/Ticket.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1730112409335</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="reporting to main">
+      <created>1730115703964</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1730115703964</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -148,6 +154,7 @@
     <MESSAGE value="reporting interface" />
     <MESSAGE value="printing main" />
     <MESSAGE value="add mail exception" />
-    <option name="LAST_COMMIT_MESSAGE" value="add mail exception" />
+    <MESSAGE value="reporting to main" />
+    <option name="LAST_COMMIT_MESSAGE" value="reporting to main" />
   </component>
 </project>
