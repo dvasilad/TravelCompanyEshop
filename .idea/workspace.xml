@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00a90a83-5f04-473b-b34c-8afcc3369f90" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/service/ItineraryService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/TravelCompanyEshop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/TravelCompanyEshop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/exception/CustomerNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/exception/TicketIssuanceException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/exception/ItineraryNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/service/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/service/TicketService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/exception/CustomerEmailException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/exception/CustomerEmailException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1730303789606</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="finalize ticket exception">
+      <created>1730319922258</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1730319922258</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -190,6 +196,7 @@
     <MESSAGE value="completion of reporting in main" />
     <MESSAGE value="insert lines" />
     <MESSAGE value="update email exception" />
-    <option name="LAST_COMMIT_MESSAGE" value="update email exception" />
+    <MESSAGE value="finalize ticket exception" />
+    <option name="LAST_COMMIT_MESSAGE" value="finalize ticket exception" />
   </component>
 </project>

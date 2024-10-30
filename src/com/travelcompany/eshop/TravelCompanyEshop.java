@@ -16,6 +16,8 @@ public class TravelCompanyEshop {
 
         CustomerService customerService = new CustomerService();
 
+        ItineraryService itineraryService = new ItineraryService();
+
         // data initialization
         Customer customer1 = new Customer(1L, "Maria Iordanou", "miordanou@mail.com", "Athens", "Greek", CustomerCategory.INDIVIDUAL);
         Customer customer2 = new Customer(2L, "Ioannis Ioannou", "iioannou@mail.com", "Athens", "Greek", CustomerCategory.BUSINESS);
@@ -118,6 +120,15 @@ public class TravelCompanyEshop {
             System.out.println("\nTicket issued: " + ticket);
         } catch (TicketIssuanceException e) {
             System.err.println("\nError issuing ticket: " + e.getMessage());
+        }
+
+
+        //handling airport code exception
+        try {
+            Itinerary itinerary = itineraryService.createItinerary(5, "ATH", "XYZ", "10-04-2025", "SkyLines", 300);
+            System.out.println("\nItinerary created: " + itinerary);
+        } catch (InvalidAirportCodeException e) {
+            System.err.println("\nError creating itinerary: " + e.getMessage());
         }
     }
 }
