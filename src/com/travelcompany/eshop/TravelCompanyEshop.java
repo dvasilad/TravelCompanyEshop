@@ -56,7 +56,9 @@ public class TravelCompanyEshop {
         Payment paymentCreditCard = new PaymentCreditCard(itinerary3.getBasicPrice(), customer2);
 
         // calculate tickets price
-        TicketService ticketService = new TicketService();
+        List<Customer> customers = null;
+        List<Itinerary> itineraries = null;
+        TicketService ticketService = new TicketService(customers, itineraries);
 
         double finalPriceCash = ticketService.calculatePrice(customer1, itinerary1, paymentCash);
         System.out.println("\nFinal price with cash: " + finalPriceCash);
@@ -66,7 +68,7 @@ public class TravelCompanyEshop {
         System.out.println("\nFinal price with credit card: " + finalPriceCreditCard);
 
         // customers / tickets & itineraries  lists
-        List<Customer> customers = new ArrayList<>();
+        customers = new ArrayList<>();
         customers.add(customer1);
         customers.add(customer2);
         customers.add(customer3);
@@ -77,7 +79,7 @@ public class TravelCompanyEshop {
         tickets.add(ticket3);
         tickets.add(ticket4);
 
-        List<Itinerary> itineraries = new ArrayList<>();
+        itineraries = new ArrayList<>();
         itineraries.add(itinerary1);
         itineraries.add(itinerary2);
         itineraries.add(itinerary3);
@@ -108,6 +110,14 @@ public class TravelCompanyEshop {
 
         } catch (CustomerEmailException e) {
             System.err.println("\nError: " + e.getMessage());
+        }
+
+        // handling ticketing exception
+        try {
+            Ticket ticket = ticketService.issueTicket(1, customer1, itinerary1, PaymentMethod.CREDIT_CARD, 300.0);
+            System.out.println("\nTicket issued: " + ticket);
+        } catch (TicketIssuanceException e) {
+            System.err.println("\nError issuing ticket: " + e.getMessage());
         }
     }
 }
