@@ -19,11 +19,6 @@ public class ItineraryReportlmpl implements Reportable {
     public void generateReport() {
         System.out.println("\nTotal offered itineraries per destination:");
 
-        // Debug print
-        itineraries.forEach(itinerary ->
-                System.out.println("Debug: Itinerary destination - " + itinerary.getDestinationAirportCode()));
-
-
         // // Group itineraries by destination and count them
         Map<String, Long> destinationCount = itineraries.stream()
                 .collect(Collectors.groupingBy(itinerary -> itinerary.getDestinationAirportCode().trim(), Collectors.counting()));

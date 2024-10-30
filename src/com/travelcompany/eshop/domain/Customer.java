@@ -1,6 +1,7 @@
 package com.travelcompany.eshop.domain;
 
 import com.travelcompany.eshop.enumeration.CustomerCategory;
+import com.travelcompany.eshop.exception.CustomerEmailException;
 
 
 public class Customer {
@@ -18,6 +19,7 @@ public class Customer {
         this.address = address;
         this.nationality = nationality;
         this.customerCategory = customerCategory;
+
     }
 
     public Long getId() {
@@ -36,7 +38,7 @@ public class Customer {
         this.name = name;
     }
 
-    public String getEmail() {
+    public String getEmail() throws CustomerEmailException {
         return email;
     }
 

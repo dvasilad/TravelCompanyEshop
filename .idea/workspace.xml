@@ -4,7 +4,14 @@
     <list default="true" id="00a90a83-5f04-473b-b34c-8afcc3369f90" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/TravelCompanyEshop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/TravelCompanyEshop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/reporting/CustomerTicketReportlmpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/reporting/CustomerTicketReportlmpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/domain/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/exception/CustomerEmailException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/exception/CustomerEmailException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/exception/CustomerNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/exception/CustomerNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/exception/InvalidAirportCodeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/exception/InvalidAirportCodeException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/exception/ItineraryNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/exception/ItineraryNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/exception/TravelCompanyException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/reporting/ItineraryReportlmpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/reporting/ItineraryReportlmpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/travelcompany/eshop/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/travelcompany/eshop/service/CustomerService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,14 +39,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/tvasilad/IdeaProjects/OteCS-day09"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/tvasilad/IdeaProjects/OteCS-day09&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.travelcompany.eshop.domain" />
@@ -147,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1730130652572</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="insert lines">
+      <created>1730134233109</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1730134233109</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -172,6 +186,7 @@
     <MESSAGE value="reporting to main" />
     <MESSAGE value="email exception travelcompany" />
     <MESSAGE value="completion of reporting in main" />
-    <option name="LAST_COMMIT_MESSAGE" value="completion of reporting in main" />
+    <MESSAGE value="insert lines" />
+    <option name="LAST_COMMIT_MESSAGE" value="insert lines" />
   </component>
 </project>
