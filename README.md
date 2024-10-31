@@ -21,8 +21,5 @@ A Java-based platform that manages travel-related services for a company, includ
 
 ## Setup
 
-1. Open the project in IntelliJ.
-2. To compile and run, open the terminal in IntelliJ and run:
-   ```bash
-   javac -d . *.java
-   java com.travelcompany.eshop.TravelCompanyEshop
+1. Clone the project in IntelliJ, using https://github.com/dvasilad/TravelCompanyEshop.git
+2. Use JDK 23.
