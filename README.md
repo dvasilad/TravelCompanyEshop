@@ -21,5 +21,5 @@ A Java-based platform that manages travel-related services for a company, includ
 
 ## Setup
 
-1. Clone the project in IntelliJ, using https://github.com/dvasilad/TravelCompanyEshop.git
-2. Use JDK 23.
+1. Clone the project in IntelliJ, using https://github.com/dvasilad/TravelCompanyEshop.git.
+2. The project use JDK 23.
