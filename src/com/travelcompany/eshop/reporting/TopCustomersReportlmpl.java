@@ -11,8 +11,8 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class TopCustomersReportlmpl implements Reportable {
-    private List<Customer> customers;
-    private List<Ticket> tickets;
+    private final List<Customer> customers;
+    private final List<Ticket> tickets;
 
     public TopCustomersReportlmpl(List<Customer> customers, List<Ticket> tickets) {
         this.customers = customers;

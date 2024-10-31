@@ -6,11 +6,11 @@ import com.travelcompany.eshop.domain.Customer;
 import com.travelcompany.eshop.domain.Ticket;
 
 import java.util.List;
-import java.util.stream.Collectors;
+
 
 public class CustomersWithoutTicketsReportlmpl implements Reportable {
-    private List<Customer> customers;
-    private List<Ticket> tickets;
+    private final List<Customer> customers;
+    private final List<Ticket> tickets;
 
     public CustomersWithoutTicketsReportlmpl(List<Customer> customers, List<Ticket> tickets) {
         this.customers = customers;
@@ -23,8 +23,7 @@ public class CustomersWithoutTicketsReportlmpl implements Reportable {
 
         List<Customer> customersWithTickets = tickets.stream()
                 .map(Ticket::getCustomer)
-                .distinct()
-                .collect(Collectors.toList());
+                .distinct().toList();
 
         customers.stream()
                 .filter(customer -> !customersWithTickets.contains(customer))

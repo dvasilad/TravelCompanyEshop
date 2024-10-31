@@ -1,7 +1,5 @@
 package com.travelcompany.eshop.domain;
 
-import java.time.LocalDate;
-
 public class Itinerary {
     private int id;
     private String departureAirportCode;

@@ -1,7 +1,6 @@
 package com.travelcompany.eshop.service;
 
 import com.travelcompany.eshop.domain.Customer;
-import com.travelcompany.eshop.enumeration.CustomerCategory;
 import com.travelcompany.eshop.exception.CustomerEmailException;
 
 
